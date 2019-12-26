@@ -1,38 +1,70 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Electrolize&display=swap");
+
+html,
+body {
+  background-color: #111111;
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.cinema-container {
+  background-color: #181818;
+  margin-top: 2%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 95vh;
+  width: 30vw;
+  border-style: none;
+}
+
+.box {
+  width: 30vw;
+  height: 5vh;
+  background-color: #181818;
+  border-style: none;
+  outline: none;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cinemas {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 4%;
+  color: #f9f9f9;
+  font-family: "Electrolize", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cinema {
+  margin-bottom: 10%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+  font-weight: 10;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  font-size: 13px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  font-size: 13px;
+  color: #f9f9f9;
+}
+
+input {
+  color: #f9f9f9;
+  font-family: "Electrolize", sans-serif;
+  font-size: 12px;
+}
+
+.map {
+  width: 70vw;
+  height: 100vh;
 }
